@@ -1,0 +1,21 @@
+Exercise 0.1
+a) Two's complement numbers
+
+b) IEEE 754
+x = s*m*b^e
+
+x = Zahl
+s = Vorzeichen (1 bit)
+m = Mantissa (23 bit)
+b = Basis (Usually b =2)
+e = Exponent (8 bit)
+
+
+Exercise 0.2
+
+d) No because power and fast_power can only handle int as b and fast_power doesn't have the same accuracy as pow,
+since it does some "unnecessary" computation.
+
+e) power and fast_power somewhere around e-16 while fast_fast_power around e-14
+power has the best accuracy, since it doesn't use unnecessary computation which decreases accuracy.
+
