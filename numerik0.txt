@@ -19,3 +19,9 @@ since it does some "unnecessary" computation.
 e) power and fast_power somewhere around e-16 while fast_fast_power around e-14
 power has the best accuracy, since it doesn't use unnecessary computation which decreases accuracy.
 
+Exercise 0.3
+
+c) int: up to 16
+long: up to 16
+double: up to 160
+

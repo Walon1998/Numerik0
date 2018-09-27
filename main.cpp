@@ -61,18 +61,27 @@ template<class T>
 T factorial(T x) {
     T res = 1;
     for (int i = 1; i <= x; ++i) {
-        res= i * res;
+        res = i * res;
     }
     return res;
 }
 
+
 template<class T>
-double dbl_factorial(T x){
-    return 0;
+double dbl_factorial(T x) {
+    int a = std::round(x);
+
+    return (double) factorial(a);
 }
 
 
 int main() {
+
+//    Vec a;
+//    for (double i = 0; i < 16; ++i) {
+//        a.push_back(i);
+//    }
+
 
 //    int_to_bits(10);
 //    int_to_bits(-10);
@@ -89,7 +98,13 @@ int main() {
 //    std::cout <<  relative_error(result1,result_real) << std::endl;
 //    std::cout <<  relative_error(result2,result_real) << std::endl;
 
-    std::cout << factorial(5) << std::endl;
+//   std::cout << factorial((int)16) << std::endl;
+//   std::cout << factorial((long)17) << std::endl;
+//   std::cout << factorial((double)170) << std::endl;
+//   std::cout << DBL_MAX << std::endl;
+//    std::cout << LONG_MAX << std::endl;
+//    std::cout << INT_MAX << std::endl;
+//    std::cout << dbl_factorial(5.7) << std::endl;
 
     return 0;
 }
