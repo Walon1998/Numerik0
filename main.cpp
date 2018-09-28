@@ -1,5 +1,8 @@
 #include <iostream>
 #include <cmath>
+#include <climits>
+#include <cfloat>
+#include "Vec.h"
 
 void int_to_bits(int x) {
     int firstbit = 1 << 31;
@@ -49,8 +52,7 @@ double fast_power(double a, int b) {
 }
 
 double fast_fast_power(double a, double b) {
-    double exp = std::exp(std::log(b));
-    return std::exp(std::log(a) * exp);
+    return std::exp(std::log(a) * b);
 }
 
 double relative_error(double a, double b) {
@@ -88,8 +90,8 @@ int main() {
 //    float_to_bits(1.0);
 //    float_to_bits(-2.0);
 
-//    double a = 50;
-//    double b = 150;
+//    double a = 2;
+//    double b = 2;
 //    double result0 = power(a, b);
 //    double result1 = fast_power(a, b);
 //    double result2 = fast_fast_power(a, b);
