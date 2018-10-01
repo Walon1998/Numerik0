@@ -22,7 +22,7 @@ power has the best accuracy, since it doesn't use unnecessary computation which 
 
 Exercise 0.3
 
-c) int: up to 16
-long: up to 16
-double: up to 160
+c) int: up to 12
+long: up to 12
+double: up to 170
 
